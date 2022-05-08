@@ -1,3 +1,3 @@
 # web-sayfa
  Kendimizi tanıtan web sayfa
-Şehrim sayfası eklendi
+Guncelleme yapildi
