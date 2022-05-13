@@ -11,12 +11,15 @@
     <div class="main">
         <div class="form-box">
             <h3><span class="ilk-harf">B</span>akü'den bir genç</h3>
-            <form id="Login" class="input-group">
-                <input type="text" class="input-field" placeholder="Kullanıcı adınızı giriniz" required>
-                <input type="password" class="input-field" placeholder="Şifrenizi giriniz" required>
+            <form id="Login" class="input-group" action="hakkinda.html" method="post" name="form" onsubmit="return validated()">
+                <input type="text" class="input-field" name="kullaniciadi" placeholder="Kullanıcı adınızı giriniz" required>
+                <div id="kullaniciadi_error"></div>
+                <input type="password" class="input-field" name="sifre" placeholder="Şifrenizi giriniz" required>
+                <div id="sifre_error"></div>
                 <button type="submit" class="submit-btn">Giriş Yap</button>
             </form>
         </div>
     </div>
+    <script src="valid.js"></script>
 </body>
 </html>

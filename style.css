@@ -15,8 +15,8 @@
 }
 
 .form-box{
-    width: 350px;
-    height: 380px;
+    width: 23%;
+    height: 50%;
     position: relative;
     background: rgba(255, 255, 255, 0.842);
     box-shadow: 0 0 20px 9px #6865641e;
@@ -43,7 +43,7 @@ font-size: 30px;
 .input-group{
 position: absolute;
 top: 180px;
-width: 280px;
+width: 75%;
 transition: .5s;
 }
 
@@ -57,9 +57,23 @@ transition: .5s;
     outline: none;
 }
 
+.input-group #kullaniciadi_error,
+.input-group #sifre_error{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}
+
 .submit-btn{
     display: block;
-    width: 220px;
+    width: 80%;
     padding: 10px;
     border: none;
     background: linear-gradient(to right, #1c1c2e, #087fce);
