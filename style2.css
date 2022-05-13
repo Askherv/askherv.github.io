@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url(photos/baku.jpg); 
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    height: 100vh;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+}
+
+.logo{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    padding: 7px;
+    font-family: 'Libre Bodoni', cursive;
+    letter-spacing: 1px;
+    color: white;
+    border-style: inset;
+    border-radius: 30px;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 6px 13px;
+    font-family: 'Lora', cursive;
+}
+
+.navbar ul li a:hover{
+    background: white;
+    color: #080db3;
+    border-radius: 15px;
+}
+
+.container .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: white;
+    font-family: 'Libre Bodoni', cursive;
+    letter-spacing: 2px;
+}
+
+.hakkimda{
+    margin-bottom: 150px;
+}
+
+.hakkimda-title{
+    margin: 0;
+}
+
+.hakkimda-title h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.hakkimda-title h2::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.hakkimda-icerik{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hakkimda-img{
+    width: 40%;
+    margin-top: 40px;
+}
+
+.hakkimda-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hakkimda-metin{
+    width: 35%;
+}
+
+h5{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-family: 'Libre Bodoni', cursive;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.hakkimda-metin p{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item{
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #080db3;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.portfolio-item:hover .overlay{
+top: 0;
+}
+
+.footer h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.footer h2::after{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer{
+    background-color: #080db3;
+}
+
+.footer-aforizma{
+    color: white;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 2;
+    font-size: 13px;
+    margin-bottom: 0;
+}
