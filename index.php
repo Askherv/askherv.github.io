@@ -3,10 +3,10 @@
     $user='b211210554@sakarya.edu.tr';
     $pass='98716206237';
 
-    if(isset($_POST['sub']))
+    if(isset($_POST['submit']))
     {
-        $username=$_POST['username'];
-        $password=$_POST['password'];
+        $username=$_POST['eposta'];
+        $password=$_POST['sifre'];
 
         if ($username==$user && $password==$pass)
         {
@@ -33,10 +33,10 @@
     <div class="main">
         <div class="form-box">
             <h3><span class="ilk-harf">B</span>akü'den bir genç</h3>
-            <form id="Login" class="input-group">
-                <input type="text" class="input-field" name="username" placeholder="Kullanıcı adınızı giriniz" required>
-                <input type="password" class="input-field" name="password" placeholder="Şifrenizi giriniz" required>
-                <button type="submit" name="sub" class="submit-btn">Giriş Yap</button>
+            <form id="Login" class="input-group" method="POST">
+                <input type="text" class="input-field" name="eposta" placeholder="Kullanıcı adınızı giriniz" required>
+                <input type="password" class="input-field" name="sifre" placeholder="Şifrenizi giriniz" required>
+                <button type="submit" name="submit" class="submit-btn">Giriş Yap</button>
             </form>
         </div>
     </div>
