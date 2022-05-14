@@ -146,9 +146,17 @@ aside {
     font-size: 1rem;
 }
 
-.footer h2{
+footer{
+    background-color: #080db3;
+}
+
+.social
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    text-align: center;
     margin: 0 auto;
     color: white;
     font-size: 20px;
@@ -156,25 +164,31 @@ aside {
     padding: 15px 0;
 }
 
-.footer h2::after{
-    content: "";
-    width: 50px;
-    height: 3px;
-    background-color: white;
-    margin: 0 auto;
-    display: block;
-    margin-top: 10px;
+.social a i{
+    color: white;
 }
 
-.footer{
-    background-color: #080db3;
+.social li
+{
+    margin: 0 10px;
 }
 
-.footer-aforizma{
+.social a{
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.social a:hover i{
+    color: rgb(118, 116, 116);
+}
+
+.text{
     color: white;
     text-align: center;
     flex-basis: 55%;
     line-height: 2;
     font-size: 13px;
     margin-bottom: 0;
-} 
+    padding-bottom: 10px;
+}
