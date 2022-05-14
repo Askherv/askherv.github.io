@@ -212,13 +212,3 @@ footer{
 .social a:hover i{
     color: rgb(118, 116, 116);
 }
-
-.text{
-    color: white;
-    text-align: center;
-    flex-basis: 55%;
-    line-height: 2;
-    font-size: 13px;
-    margin-bottom: 0;
-    padding-bottom: 10px;
-}
