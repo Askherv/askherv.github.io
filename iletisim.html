@@ -28,19 +28,11 @@
                 <h2>İletişime geçmek için aşağıdaki formu doldurunuz</h2>
             </div>
         </header>
-        <form action="" method="post">
+        <form id="form" action="" method="post" onsubmit="return epostaKontrolu()">
                 <table>
                     <tr>
-                        <td>Adı, Soyadı:</td>
-                        <td><input type="text" name="adsoyad" required><br></td>
-                    </tr>
-                    <tr>
                         <td><br></td>
                         <td><br></td>
-                    </tr>
-                    <tr>
-                        <td>Telefon numarası:</td>
-                        <td><input type="text" name="numara"><br></td>
                     </tr>
                     <tr>
                         <td><br></td>
@@ -48,15 +40,12 @@
                     </tr>
                     <tr>
                         <td>Eposta adr.:</td> 
-                        <td><input type="email" name="eposta" required><br></td>
+                        <td><input type="text" name="eposta" id="email" onkeydown="epostaKontrolu()"><br></td>
+                        <td><span id="text1"></span></td>
                      </tr>
                     <tr>
                         <td><br></td>
                         <td><br></td>
-                    </tr>
-                    <tr>
-                        <td>Konu:</td>
-                        <td><input type="text" name="konu" required><br></td>
                     </tr>
                     <tr>
                         <td><br></td>
@@ -64,7 +53,19 @@
                     </tr>
                     <tr>
                         <td>İleti:</td>
-                        <td><textarea name="konu" cols="30" rows="10"></textarea></td>
+                        <td><textarea name="konu" cols="30" rows="10" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
                     </tr>
                     <tr>
                         <td><br></td>
@@ -76,6 +77,40 @@
                     </tr>
                 </table>
         </form>
+        <script type="text/javascript">
+
+            function epostaKontrolu()
+            {
+                var form = document.getElementById("form");
+                var email = document.getElementById("email").value;
+                var text = document.getElementById("text1");
+                var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+                if(email.match(pattern))
+                {
+                    form.classList.add("valid");
+                    form.classList.remove("invalid");
+                    text.innerHTML = "E-posta adresi geçerli";
+                    text.style.color = "green";
+                }
+                else
+                {
+                    form.classList.remove("valid");
+                    form.classList.add("invalid");
+                    text.innerHTML = "*Geçerli e-posta adresi giriniz";
+                    text.style.color = "#ff0000";
+                }
+
+                if(email == "")
+                {
+                    form.classList.remove("valid");
+                    form.classList.remove("invalid");
+                    text.innerHTML = "*E-posta adresini boş bırakamazsınız";
+                    text.style.color = "#ff0000";
+                    return false;
+                }
+            }
+        </script>
     <br><br><br>
         <footer>
             <div class="icon">
