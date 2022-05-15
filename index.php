@@ -1,7 +1,7 @@
 <?php
     ob_start();
     $user='b211210554@sakarya.edu.tr';
-    $pass='98716206237';
+    $pass='b211210554';
 
     if(isset($_POST['submit']))
     {
