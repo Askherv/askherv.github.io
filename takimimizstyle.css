@@ -81,8 +81,8 @@ main{
 }
 
 .resim img{
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 50%;
 }
 
 .karabag-fk{
@@ -178,8 +178,8 @@ main{
 }
 
 .resim-2000 img{
-    width: 600px;
-    height: 350px;
+    width: 100%;
+    height: 50%;
 }
 
 .kurbanov-donemi h3{

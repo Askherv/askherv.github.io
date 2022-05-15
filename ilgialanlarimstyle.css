@@ -82,8 +82,8 @@ main{
 }
 
 .lightresim img{
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 50%;
 }
 
 .anime{
@@ -132,8 +132,8 @@ main{
 }
 
 .resim-esc img{
-    width: 600px;
-    height: 350px;
+    width: 100%;
+    height: 50%;
 }
 
 .spor{
@@ -164,8 +164,8 @@ main{
 }
 
 .resim-vlybl img{
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 50%;
 }
 
 footer{

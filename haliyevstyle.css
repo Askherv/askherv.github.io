@@ -92,8 +92,8 @@ main{
 }
 
 .merkez-resim img{
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 50%;
 }
 
 footer{

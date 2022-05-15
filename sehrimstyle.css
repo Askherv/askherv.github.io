@@ -82,8 +82,8 @@ main{
 }
 
 .resim img{
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 50%;
 }
 
 .tarihi{
@@ -200,8 +200,8 @@ main{
 }
 
 .resim-metro img{
-    width: 600px;
-    height: 350px;
+    width: 100%;
+    height: 50%;
 }
 
 .tramvay {
@@ -216,8 +216,8 @@ main{
 }
 
 .resim-tramvay img{
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 50%;
 }
 
 .havaalani {
@@ -232,8 +232,8 @@ main{
 }
 
 .resim-havaalani img{
-    width: 600px;
-    height: 350px;
+    width: 100%;
+    height: 50%;
 }
 
 .kultur-eglence{
@@ -264,8 +264,8 @@ main{
 }
 
 .resim-tiyatro img{
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 50%;
 }
 
 * {box-sizing:border-box}
